@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 100%;
+    background-color: rgba(47, 54, 95);
+    color: #fff;
+}
+
+/* Sidebar Title */
+aside h2 {
+    background-color: rgba(25, 30, 56);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Sidebar Nav Menu */
+aside ul {
+}
+
+aside ul li {
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(120, 134, 215);
+    margin-top: 2rem;
+    margin-left: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: .5rem 1rem .5rem .75rem;
+
+}
