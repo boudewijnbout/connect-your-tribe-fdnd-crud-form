@@ -17,71 +17,79 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Rubik:wght@400;500;600;700&display=swap"
           rel="stylesheet">
-</head>
+</head
 <body>
 
 <!-- Main Content -->
 <main>
 
-    <h1><span>Studenten /</span> Toevoegen</h1>
+    <h1><a href="index.html"><span>Studenten /</span></a> Toevoegen</h1>
 
     <section>
-        <form action="">
+        <form id="createStudentForm" action="https://tribe.api.fdnd.nl/v1/member" method="POST">
 
+            <!-- SquadId -->
             <div class="form-group">
-                <label for="memberId">MemberId:</label>
-                <input type="text" name="memberId" id="memberId">
+                <label for="squadId">SquadId:</label>
+                <input type="number" name="squadId" id="squadId" required>
             </div>
 
-            <div class="form-group">
-                <label for="studentId">StudentId:</label>
-                <input type="text" name="studentId" id="studentId">
-            </div>
-
+            <!-- Type -->
             <div class="form-group">
                 <label for="type">Type:</label>
-                <input type="text" name="type" id="type">
+                <input type="text" name="type" id="type" required>
             </div>
 
+            <!-- Nickname -->
             <div class="form-group">
                 <label for="nickname">Nickname:</label>
-                <input type="text" name="nickname" id="nickname">
+                <input type="text" name="nickname" id="nickname" required>
             </div>
 
+            <!-- Name -->
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
             </div>
 
+            <!-- Prefix -->
             <div class="form-group">
                 <label for="prefix">Prefix:</label>
-                <input type="text" name="prefix" id="prefix">
+                <input type="text" name="prefix" id="prefix" required>
             </div>
 
+            <!-- Surname -->
             <div class="form-group">
-                <label for="surname">Surname</label>
-                <input type="text" name="surname" id="surname">
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname" required>
             </div>
 
+            <!-- Avatar -->
             <div class="form-group">
-                <label for="avatar">Avatar</label>
-                <input type="file" name="avatar" id="avatar">
+                <label for="avatar">Avatar:</label>
+                <input type="url" name="avatar" id="avatar" required>
             </div>
 
+            <!-- GithubHandle -->
             <div class="form-group">
-                <label for="githubHandle">GithubHandle</label>
-                <input type="text" name="githubhandle" id="githubHandle">
+                <label for="githubHandle">GithubHandle:</label>
+                <input type="text" name="githubHandle" id="githubHandle" required>
             </div>
 
+            <!-- Bio -->
             <div class="form-group">
-                <label for="bio">Bio</label>
-                <input type="text" name="bio" id="bio">
+                <label for="bio">Bio:</label>
+                <input type="text" name="bio" id="bio" required>
             </div>
 
+            <!-- Url -->
             <div class="form-group">
-                <label for="url">Url</label>
-                <input type="text" name="url" id="url">
+                <label for="url">Url:</label>
+                <input type="url" name="url" id="url" required>
             </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Student Toevoegen</button>
 
         </form>
     </section>
@@ -98,3 +106,8 @@
         </ul>
     </aside>
 </main>
+
+<!-- Scripts -->
+<script src="scripts/create.js"></script>
+</body>
+</html>

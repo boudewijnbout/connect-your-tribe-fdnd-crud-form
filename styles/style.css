@@ -65,14 +65,6 @@ main table tr {
     transition: background-color 200ms;
 }
 
-main table tr:nth-child(1):hover {
-    background-color: transparent;
-}
-
-main table tr:hover {
-    background-color: rgba(241, 245, 249);
-}
-
 /* Main Content Table */
 main table tr th {
     padding: 1.5rem 1.5rem 1rem 1.5rem;
@@ -85,7 +77,32 @@ main table td {
     padding: .75rem 1.5rem .75rem 1.5rem;
 }
 
+/* Table Avatar Image */
+table img {
+    width: 2.5rem;
+    height: auto;
+    border-radius: 50%;
+}
+
 main table a  {
     font-family: 'Inter', sans-serif;
     color: #262626;
+}
+
+/*--------------------------------------------------------------
+# Add Student Btn
+--------------------------------------------------------------*/
+
+.add-student-btn-wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.add-student-btn-wrapper a {
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(86, 97,179);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: .9rem;
 }
