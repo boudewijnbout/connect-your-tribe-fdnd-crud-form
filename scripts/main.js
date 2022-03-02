@@ -15,9 +15,11 @@ fetch(apiUrl)
         fillStudentTable(students);
     })
 
+// Fill the student table
 function fillStudentTable(students) {
     students.forEach(student => {
 
+        // Create a HTML table
         studentTable.insertAdjacentHTML('beforeend',
             `
             <tr>
@@ -29,6 +31,9 @@ function fillStudentTable(students) {
             </td>
             <td>
                 <a href="#">${student.surname}</a>    
+            </td>
+            <td>
+                <a href="https://github.com/${student.githubHandle}">${student.githubHandle}</a>
             </td>
             <td>
                 <p>></p>

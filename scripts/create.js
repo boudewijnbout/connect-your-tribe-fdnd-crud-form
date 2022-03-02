@@ -2,10 +2,12 @@
 const createStudentForm = document.querySelector('#createStudentForm');
 const apiUrl = 'https://tribe.api.fdnd.nl/v1/member';
 
+// Create a submnit listener
 createStudentForm.addEventListener('submit', function (e) {
 
     e.preventDefault();
 
+    // Create a data object with data from the create form.
     let data = {
         "squadId": parseInt(document.querySelector('#squadId').value),
         "type": document.querySelector('#type').value,
@@ -19,6 +21,7 @@ createStudentForm.addEventListener('submit', function (e) {
         "url": document.querySelector('#url').value,
     }
 
+    // Send the form data to the API
     fetch(apiUrl, {
         method: 'POST',
         headers: {

@@ -47,8 +47,7 @@ p {
 --------------------------------------------------------------*/
 
 main {
-    margin-left: 12rem;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 /* Main Content Title */
@@ -76,7 +75,7 @@ form {
 }
 
 .form-group {
-    width: 50%;
+    width: 100%;
     margin-bottom: 2rem;
     padding-right: 1.5rem;
 }
@@ -105,4 +104,21 @@ form button {
     font-size: .9rem;
     border: none;
     outline: none;
+}
+
+/*--------------------------------------------------------------
+# Media Query's
+--------------------------------------------------------------*/
+
+@media (min-width: 40rem) {
+    .form-group {
+        width: 50%;
+    }
+}
+
+@media (min-width: 60rem) {
+    main {
+        padding: 3rem;
+        margin-left: 12rem;
+    }
 }
